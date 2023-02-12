@@ -1,0 +1,71 @@
+<!-- 
+    ctrl + p 全局搜索 
+    Alt +上下方向键↑↓ 向上or向下移动光标所在行代码
+-->
+
+<!-- 
+    alt+↑或者↓  选中
+    ctrl+↑或者↓ 跳转下一个词
+ -->
+
+ <!-- 
+    ctrl + D 快速选中同名变量
+    ctrl + K 取消快速选中同名变量
+    alt + 鼠标左键  选择多行 同时操作
+  -->
+  
+<!-- 
+  ctrl + shift + \ 光标快速从 { 跳转到 } 
+  ctrl + [ 或者 ]  快速缩进
+-->
+
+<!-- 
+  ctrl + shift + L  快速选中所有同名变量 （不区分大小写）
+  选中变量名 按F2键 可以给所有同名变量改名
+ -->
+
+
+<!-- <script>
+  
+
+  const words = ["howdy","yes","cool"]
+  console.log(words.filter(word => word.length >= 3))
+
+  const weather = {
+    city:"广州市",
+    tenperature:27,
+    humidity:"94%"
+  }
+   const weatherForecast = `下面为您播报一则天气，${weather.city}气温${weather.tenperature}度，湿度为${weather.humidity}。`
+   console.log(weatherForecast)
+
+   function calc(x){
+    return `你输入的参数是{${x}}，它的两倍是{${2*x}}，它的平方是{${x*x}}`
+   }
+
+   console.log(calc(5))
+
+
+
+
+</script> -->
+
+<script>
+  const product = {
+    name:"pocky",
+    price:3.98,
+    dimensions:{
+      length:21.6,
+      width:15.5,
+      height:3.3
+    }
+  }
+
+  const {name:productName,price:productPrice,dimensions:{height:productHeight}} = product
+  console.log(productName,productPrice,productHeight)
+
+  const record = "pocky,3.98,Oct 11 2019"
+  const [name,price,date] = record.split(",")
+  console.log(name,price,date)
+
+</script>
